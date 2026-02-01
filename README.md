@@ -13,9 +13,10 @@ k6 run test/k6/checkout.test.js
 # thresholds - meta de performance
 Utilizado no arquivo de login.test.js dentro de options, sendo aplicado percentil variados para determinar tempo.
 ex:
- thresholds: {
-    http_req_duration: ['p(90)<=11'],
+thresholds: {
+  http_req_duration: ['p(90)<=11'],
 }
+
 
 # helpers - reutilização de código
 Localizado na pasta test/k6/helpers/login.js
